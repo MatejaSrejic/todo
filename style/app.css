@@ -1,0 +1,199 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.addTask {
+    margin-top: 20px;
+}
+
+.addTask .input-group {
+    height: 50px;
+    font-weight: 500;
+    /*border: 0.5px solid rgb(227, 227, 227);
+    border-radius: 12px;*/
+}
+
+.addTask .input-group input { 
+    border: 0.5px solid rgb(227, 227, 227);
+    border-radius: 12px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.addTask .input-group button { 
+    border: 0.5px solid rgb(227, 227, 227);
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.addTask button {
+    background-color:rgb(0, 93, 193);
+    color: rgb(231, 231, 231);
+}
+
+.addTask button:hover {
+    background-color:rgb(0, 109, 225);
+    color: rgb(255, 255, 255);
+}
+
+.btnDanger {
+    background-color:rgb(198, 0, 26);
+    color: rgb(231, 231, 231);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 48px;
+    width: 168px;
+    border-radius: 15px;
+}
+
+.btnDanger:hover {
+    background-color:rgb(164, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    font-size: 20px;
+    align-items: center;
+    border: 0.5px solid rgb(227, 227, 227);
+    border-radius: 12px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    background-color:rgb(0, 93, 193);
+    color: rgb(231, 231, 231);
+    height: 50px;
+    width: 60px;
+    font-size: 20px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-right: 20px;
+}
+
+.checkbox:hover {
+    background-color:rgb(0, 109, 225);
+    color: rgb(255, 255, 255);
+}
+
+.taskToolbar {
+    margin-left: auto
+}
+
+.taskToolbar button:focus {
+    box-shadow: none!important;
+}
+
+.deleteBtn {
+    color: red;
+}
+
+.deleteBtn:hover {
+    color: rgb(157, 0, 0);
+}
+
+.editBtn:hover {
+    color: rgb(154, 154, 154);
+}
+
+/* COMPLETED TASK CSS: */
+
+.completedH2 {
+    color: rgb(199, 199, 199);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.completedTask {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    font-size: 20px;
+    align-items: center;
+    border: 0.5px solid rgb(227, 227, 227);
+    border-radius: 12px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    color:rgb(199, 199, 199);
+}
+
+.completedTaskDetails {
+    text-decoration:line-through;
+    text-decoration-thickness: 1px;
+}
+
+.completedRestore {
+    background-color:rgb(170, 199, 229);
+    color: rgb(231, 231, 231);
+    height: 50px;
+    width: 60px;
+    font-size: 20px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-right: 20px;
+}
+
+.completedRestore:hover {
+    background-color:rgb(139, 181, 226);
+    color: rgb(255, 255, 255);
+}
+
+.completedTaskToolbar {
+    margin-left: auto
+}
+
+.completedTaskToolbar button:focus {
+    box-shadow: none!important;
+}
+
+.completedDeleteBtn {
+    color: rgba(255, 0, 0, 0.327);
+}
+
+.completedDeleteBtn:hover {
+    color: rgb(157, 0, 0);
+}
+
+.completedEditBtn {
+    color: rgba(0, 0, 0, 0.389);
+}
+
+.completedEditBtn:hover {
+    color: rgb(154, 154, 154);
+}
+
+.editBtn, .completedEditBtn {
+    display: none;
+}
+
+.noTasks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.noTasks h5 {
+    font-size: 28px;
+}
+
+.noTasks img {
+    height: 285px;
+}
+
+/* PRELOAD: */
+.noTasks, .toDoH2, .completedH2 { display: none; }
